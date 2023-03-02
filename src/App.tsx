@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Home } from "./pages";
+import { useSelector } from "react-redux";
+import { selectTheme } from "./reducers/themeSlice";
 
 function App() {
+  const theme = useSelector(selectTheme);
+
+  theme
+    ? document.getElementsByTagName("html")[0].classList.add("dark")
+    : document.getElementsByTagName("html")[0].classList.remove("dark");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="dark:bg-primaryDark/90 bg-blue-100/80 w-full min-h-screen p-5 ">
+      <Home />
     </div>
   );
 }
