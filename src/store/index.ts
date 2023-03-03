@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import themeReducer from "../reducers/themeSlice";
+import dimensionReducer from "../reducers/dimensionSlice";
 
 const store = configureStore({
   reducer: {
     theme: themeReducer,
+    dimension: dimensionReducer,
   },
 });
 
