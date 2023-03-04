@@ -22,7 +22,7 @@ function App() {
   });
 
   return (
-    <div className="dark:bg-primaryDark/90 bg-blue-100/80 w-full h-screen p-5 overflow-hidden">
+    <div className="dark:bg-primaryDark/90 bg-blue-100/90 w-full h-screen p-5 overflow-hidden">
       <Home />
     </div>
   );

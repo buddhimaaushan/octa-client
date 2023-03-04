@@ -8,7 +8,7 @@ import {
   NortificationIcon,
   SearchIcon,
   SettingIcon,
-} from "./NavIcons";
+} from "./NavbarIcons";
 
 type Props = {
   onClick: Function;
@@ -24,7 +24,7 @@ const commonClassSub =
 const transitions =
   "transition-all duration-100 ease-in-out select-none active:scale-100 hover:scale-110";
 
-export function Search({ onClick }: Props): JSX.Element {
+export function BtnSearch({ onClick }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
 
   return (
@@ -39,7 +39,7 @@ export function Search({ onClick }: Props): JSX.Element {
   );
 }
 
-export function Nortification({ onClick, badge = 0 }: Props): JSX.Element {
+export function BtnNortification({ onClick, badge = 0 }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -67,7 +67,7 @@ export function Nortification({ onClick, badge = 0 }: Props): JSX.Element {
   );
 }
 
-export function Chat({ onClick, badge = 0 }: Props): JSX.Element {
+export function BtnChat({ onClick, badge = 0 }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -92,7 +92,7 @@ export function Chat({ onClick, badge = 0 }: Props): JSX.Element {
   );
 }
 
-export function Profile({ onClick }: Props): JSX.Element {
+export function BtnProfile({ onClick }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -120,7 +120,7 @@ export function Profile({ onClick }: Props): JSX.Element {
   );
 }
 
-export function Theme({ onClick, theme }: Props): JSX.Element {
+export function BtnTheme({ onClick, theme }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
 
   return (
@@ -135,7 +135,7 @@ export function Theme({ onClick, theme }: Props): JSX.Element {
   );
 }
 
-export function Setting({ onClick }: Props): JSX.Element {
+export function BtnSetting({ onClick }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -149,7 +149,7 @@ export function Setting({ onClick }: Props): JSX.Element {
   );
 }
 
-export function Help({ onClick }: Props): JSX.Element {
+export function BtnHelp({ onClick }: Props): JSX.Element {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -162,3 +162,15 @@ export function Help({ onClick }: Props): JSX.Element {
     </div>
   );
 }
+
+const defaultExport = {
+  BtnSearch,
+  BtnNortification,
+  BtnChat,
+  BtnProfile,
+  BtnTheme,
+  BtnSetting,
+  BtnHelp,
+};
+
+export default defaultExport;

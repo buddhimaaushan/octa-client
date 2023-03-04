@@ -4,48 +4,36 @@ import { selectWidth } from "../reducers/dimensionSlice";
 
 function Div(props: PropsWithChildren) {
   return (
-    <div className="w-min h-full flex flex-wrap justify-center items-start mx-3 rounded-3xl  overflow-x-hidden overflow-y-auto scrollbar  ">
+    <div className="w-auto h-full px-3 py-1 flex flex-col justify-start items-center  rounded-3xl  overflow-x-hidden overflow-y-auto scrollbar  ">
       {props.children}
     </div>
   );
 }
 
 type Props = {
-  left?: React.ReactNode;
-  center?: React.ReactNode;
-  right?: React.ReactNode;
+  children: Array<React.ReactNode>;
 };
 
-function render(props: Props, width: number) {
-  const left = <Div>{props.left}</Div>;
-  const center = <Div>{props.center}</Div>;
-  const right = <Div>{props.right}</Div>;
-  if (width < 800) {
-    return <>{center}</>;
-  } else if (width < 1300) {
-    return (
-      <>
-        {center}
-        {right}
-      </>
-    );
-  } else {
-    return (
-      <>
-        {left}
-        {center}
-        {right}
-      </>
-    );
-  }
-}
-
-function Main(props: Props) {
+function Main({ children }: Props) {
   const width = useSelector(selectWidth);
-
   return (
-    <main className="w-full h-[calc(100%-6.3rem)] my-5 flex justify-center items-center  rounded-3xl overflow-hidden">
-      {render(props, width)}
+    <main className="w-full h-[calc(100%-6.3rem)] my-5 flex justify-around items-start  rounded-3xl overflow-hidden">
+      {width < 1200 ? (
+        <>
+          <Div>{children[1]}</Div>
+        </>
+      ) : width < 1400 ? (
+        <>
+          <Div>{children[1]}</Div>
+          <Div>{children[2]}</Div>
+        </>
+      ) : (
+        <>
+          <Div>{children[0]}</Div>
+          <Div>{children[1]}</Div>
+          <Div>{children[2]}</Div>
+        </>
+      )}
     </main>
   );
 }

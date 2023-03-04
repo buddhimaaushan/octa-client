@@ -1,4 +1,4 @@
-import { Navbar } from "../components";
+import { Usersbar, Navbar, Sidebar } from "../templates";
 import { Main } from "../layouts";
 
 type Props = {};
@@ -8,56 +8,13 @@ function Home(props: Props) {
       <header>
         <Navbar />
       </header>
-      <Main
-        left={
-          <>
-            <div className="bg-green-400   w-[600px] h-[500px] mb-5 last:mb-0 rounded-3xl flex justify-center">
-              1ZZZ
-            </div>
-            <div className="bg-green-400  w-[600px] h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              2ZZZ
-            </div>
-            <div className="bg-green-400  w-[600px] h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              3ZZZ
-            </div>
-            <div className="bg-green-400  w-[600px] h-[500px] mb-5 last:mb-0">
-              4ZZZ
-            </div>
-          </>
-        }
-        center={
-          <>
-            <div className="bg-green-400 min-w-[500px] w-[2000px]  h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              1ZZZ
-            </div>
-            <div className="bg-green-400 min-w-[500px] w-[2000px]  h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              2ZZZ
-            </div>
-            <div className="bg-green-400 min-w-[500px] w-[2000px]  h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              3ZZZ
-            </div>
-            <div className="bg-green-400 min-w-[500px] w-[2000px]  h-[500px] mb-5 last:mb-0">
-              4ZZZ
-            </div>
-          </>
-        }
-        right={
-          <>
-            <div className="bg-green-400  w-[800px]  h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              1ZZZ
-            </div>
-            <div className="bg-green-400  w-[800px] h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              2ZZZ
-            </div>
-            <div className="bg-green-400  w-[800px] h-[500px] mb-5 last:mb-0 rounded-3xl ">
-              3ZZZ
-            </div>
-            <div className="bg-green-400  w-[800px] h-[500px] mb-5 last:mb-0">
-              4ZZZ
-            </div>
-          </>
-        }
-      />
+      <Main>
+        <Sidebar />
+        <div className="bg-green-400 min-w-[500px] w-[50rem]  h-[500px] mb-5 last:mb-0 rounded-3xl opacity-5">
+          1ZZZ
+        </div>
+        <Usersbar />
+      </Main>
     </>
   );
 }

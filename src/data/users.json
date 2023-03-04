@@ -1,0 +1,50 @@
+[
+  {
+    "img": "https://randomuser.me/api/portraits/men/51.jpg",
+    "name": "Hitman",
+    "sub": "Agent 47",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/52.jpg",
+    "name": "Aushan",
+    "sub": "Data Scientist",
+    "followers": "50.5M",
+    "following": "635",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/53.jpg",
+    "name": "Kali",
+    "sub": "Computer Scientist",
+    "followers": "100K",
+    "following": "32K",
+    "verify": "user"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/54.jpg",
+    "name": "Dananjaya",
+    "sub": "Doctor",
+    "followers": "300",
+    "following": "232",
+    "verify": "user"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/55.jpg",
+    "name": "Kulathunga",
+    "sub": "Architect",
+    "followers": "1.2M",
+    "following": "43",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/56.jpg",
+    "name": "Jayawardana",
+    "sub": "Mechanic",
+    "followers": "3.45K",
+    "following": "11K",
+    "verify": "user"
+  }
+]
