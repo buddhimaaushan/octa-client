@@ -15,7 +15,7 @@
     background-color: transparent;
   }
   .scrollbar::-webkit-scrollbar-button {
-    height: 2%;
+    height: 20rem;
   }
 
   .scrollbar::-webkit-scrollbar {
@@ -40,6 +40,15 @@
   .dark .scrollbar::-webkit-scrollbar-thumb {
     background-color: #374151;
     border-radius: 500px;
+  }
+
+  .trans-btn {
+    transition: all 0.2s ease;
+  }
+
+  .trans-ele {
+    backface-visibility: hidden;
+    transition: all 0.2s ease;
   }
 }
 
@@ -70,7 +79,7 @@ body {
   min-height: 100vh;
 }
 
-.bg-primaryDark {
+/* .bg-primaryDark {
   background-color: "#0f172a";
 }
 .bg-primary {
@@ -78,4 +87,9 @@ body {
 }
 .bg-primaryLight {
   background-color: "#1f283e";
-}
+} */
+
+/* div[contenteditable]:empty:focus::before,
+div[contenteditable]:empty::before {
+  content: "Write something in div";
+} */

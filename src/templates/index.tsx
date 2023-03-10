@@ -1,3 +1,9 @@
 export { default as Navbar } from "./Navbar";
 export { default as Sidebar } from "./Sidebar";
 export { default as Usersbar } from "./Usersbar";
+export { default as Timeline } from "./Timeline";
+export { default as Trending } from "./Trending";
+export { default as Popular } from "./Popular";
+export { default as Favourite } from "./Favourite";
+export { default as Saved } from "./Saved";
+export { default as NewsFeed } from "./NewsFeed";

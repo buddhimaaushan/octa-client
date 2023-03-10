@@ -1,6 +1,46 @@
 [
   {
-    "img": "https://randomuser.me/api/portraits/men/51.jpg",
+    "img": "https://randomuser.me/api/portraits/men/31.jpg",
+    "name": "Batman",
+    "sub": "Billionaire",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/32.jpg",
+    "name": "Rambo",
+    "sub": "Silvester",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/33.jpg",
+    "name": "John Cena",
+    "sub": "WWE",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/34.jpg",
+    "name": "Aquaman",
+    "sub": "Mamoa",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/35.jpg",
+    "name": "Arnold",
+    "sub": "Terminator",
+    "followers": "44M",
+    "following": "99.4K",
+    "verify": "public"
+  },
+  {
+    "img": "https://randomuser.me/api/portraits/men/36.jpg",
     "name": "Hitman",
     "sub": "Agent 47",
     "followers": "44M",

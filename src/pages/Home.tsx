@@ -1,5 +1,6 @@
 import { Usersbar, Navbar, Sidebar } from "../templates";
 import { Main } from "../layouts";
+import { Outlet } from "react-router-dom";
 
 type Props = {};
 function Home(props: Props) {
@@ -10,9 +11,7 @@ function Home(props: Props) {
       </header>
       <Main>
         <Sidebar />
-        <div className="bg-green-400 min-w-[500px] w-[50rem]  h-[500px] mb-5 last:mb-0 rounded-3xl opacity-5">
-          1ZZZ
-        </div>
+        <Outlet />
         <Usersbar />
       </Main>
     </>

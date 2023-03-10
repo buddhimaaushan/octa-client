@@ -42,6 +42,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        s: "510px",
+      },
       colors: {
         primaryDark: "#0f172a",
         primary: "#1a2035",
@@ -75,6 +78,7 @@ module.exports = {
         110: "30rem",
         120: "40rem",
         130: "50rem",
+        135: "55rem",
         140: "60rem",
         150: "70rem",
         160: "80rem",

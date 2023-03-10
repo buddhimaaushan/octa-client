@@ -1,8 +1,10 @@
-export * from "./NavbarButtons";
-export { default as NavbarButtons } from "./NavbarButtons";
-export * from "./NavbarIcons";
-export { default as UserProfile } from "./UserProfile";
+export * from "./Profile";
 export { default as SidebarOptions } from "./SidebarOptions";
-export { default as SidebarLink } from "./SidebarLink";
 export { default as UsersbarOptions } from "./UsersbarOptions";
 export { default as UsersbarUsers } from "./UsersbarUsers";
+export { default as NewPost } from "./NewPost";
+export { default as PostPrivacy } from "./PostPrivacy";
+export { default as NavbarIconList } from "./NavbarIconList";
+export { default as Button } from "./Button";
+export { default as Uploads } from "./Uploads";
+export { default as ViewMediaModal } from "./ViewMediaModal";

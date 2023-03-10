@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectUserbar } from "../reducers/tweakSlice";
-import UserProfile from "./UserProfile";
+import UserProfile from "./Profile/UserProfile";
 
 import userData from "../data/users.json";
 
@@ -15,7 +15,7 @@ const UsersbarUsers = ({ width = "106", ...props }: Props) => {
 
   return (
     <div
-      className={`dark:bg-${option.color}-1100 bg-${option.color}-50/50 drop-shadow-lg w-${width} min-h-[20rem] h-[calc(100%-9rem)] px-5 py-6 mb-5 last:mb-0 rounded-3xl flex flex-col justify-center items-center overflow-hidden  shrink-0 `}
+      className={`dark:bg-${option.color}-1100 bg-${option.color}-50/50 drop-shadow-lg w-${width} min-h-[20rem] h-[calc(100%-10rem)] px-5 py-6 mb-5 last:mb-0 rounded-3xl flex flex-col justify-center items-center overflow-hidden  shrink-0 `}
     >
       <div
         className={`w-full flex justify-between items-center px-5 pb-5  font-semibold text-xl dark:text-${option.color}-400 text-${option.color}-600`}
@@ -23,7 +23,7 @@ const UsersbarUsers = ({ width = "106", ...props }: Props) => {
         <div>{option.text}</div>
         <div>175</div>
       </div>
-      <div className="overflow-y-auto overflow-x-hidden h-fit rounded-3xl px-5 scrollbar">
+      <div className="overflow-y-auto overflow-x-hidden h-fit rounded-3xl px-2 scrollbar">
         {users?.map((user, index) => (
           <UserProfile
             key={index}
@@ -35,6 +35,7 @@ const UsersbarUsers = ({ width = "106", ...props }: Props) => {
             verify={user.verify}
             color={option.color}
             width="104"
+            size="small"
             state={state}
           />
         ))}
